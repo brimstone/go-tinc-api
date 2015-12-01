@@ -1,0 +1,9 @@
+language: go
+go:
+  - tip
+before_install:
+  - go get github.com/axw/gocov/gocov
+  - go get github.com/mattn/goveralls
+  - go get -v -d
+script:
+  - $HOME/gopath/bin/goveralls -v -repotoken ccKDrfhudon6PTiCBwFCMbtm05C9hHh4t
